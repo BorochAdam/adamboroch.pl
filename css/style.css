@@ -16,6 +16,18 @@ body{
     background: #1E1E1E;
     padding: 10px 0;
 }
+.header-logo{
+    width: 450px;
+    padding: 40px 0;
+    font-size: 58px;
+    margin: 0 auto;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.header-logo span {
+    color: #d95267;
+}
 .header-menu a{
     color: white;
 }
@@ -31,9 +43,13 @@ ul{
     text-transform: uppercase;
 }
 li a{
+    display: block;
+    width: 100%;
+}
+li a{
     text-decoration: none;
 }
-li a:hover{
+li:hover{
     text-decoration: none;
     background-color: #c3c9ce;
 }
