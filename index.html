@@ -17,18 +17,18 @@
 <header>
     <div class="container">
 
-            <div class="header-logo">
-                adam<span>boroch</span>.pl
+            <div class="header-logo" id="start">
+                <a href="#start"> adam<span>boroch</span>.pl</a>
             </div>
 
     </div>
             <div class="header-menu">
                 <ul>
-                    <li><a href="#">Start</a></li>
-                    <li><a href="#">O mnie</a></li>
-                    <li><a href="#">Projekty</a></li>
-                    <li><a href="#">Technologie</a></li>
-                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#start">Start</a></li>
+                    <li><a href="#about-me">O mnie</a></li>
+                    <li><a href="#projects">Projekty</a></li>
+                    <li><a href="#technologies">Technologie</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
     <div class="container">
@@ -38,16 +38,16 @@
             </h1>
     </div>
 </header>
-        <div class="about-me">
+        <div class="about-me" id="about-me">
             ABOUT ME
         </div>
-        <div class="portfolio">
+        <div class="portfolio" id="projects">
             portfolio
         </div>
-        <div class="technologies">
+        <div class="technologies" id="technologies">
             TECHNOLOGIES
         </div>
-        <footer>
+        <footer id="contact">
             CONTACT
         </footer>
 
@@ -78,9 +78,46 @@
             stickyNav();
         });
     });
-
 </script>
-
+<!--smooth scroll do hashów-->
+<script>
+    // Select all links with hashes
+    $('a[href*="#"]')
+    // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+            ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function() {
+                        // Callback after animation
+                        // Must change focus!
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                        } else {
+                            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                        };
+                    });
+                }
+            }
+        });
+</script>
 
 </body>
 </html>
