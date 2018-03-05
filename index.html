@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="Stylesheet" type="text/css" href="./css/style.css" />
     <!--font lato from Google site-->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
@@ -15,10 +15,11 @@
 </head>
 <body>
 <header>
-    <div class="container">
+    <div class="container25" id="start">
 
-            <div class="header-logo" id="start">
+            <div class="header-logo"><h1>
                 <a href="#start"> adam<span>boroch</span>.pl</a>
+            </h1>
             </div>
 
     </div>
@@ -31,32 +32,41 @@
                     <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
-    <div class="container">
-
-            <h1>
-                <span>Adam </span>Boroch
-            </h1>
+    <div class="container75">
+        <div class="left-side">
+            <span class="capital">Cześć!</span> <br /> Nazywam się Adam i stawiam pierwsze kroki jako <br /> <span class="imprint">Front-End Developer</span>
+        </div>
+        <div class="right-side">
+            <img
+                    src="images/if_Studio_1562691.png"
+                    alt="Computer Graphics"
+                    height="70%"
+                    width="70%"
+            />
+        </div>
     </div>
 </header>
-        <div class="about-me" id="about-me">
-            ABOUT ME
+        <div class="about-me container" id="about-me">
+            <div class="container-header">
+                ABOUT ME
+            </div>
         </div>
-        <div class="portfolio" id="projects">
+        <div class="portfolio container" id="projects">
             portfolio
         </div>
-        <div class="technologies" id="technologies">
+        <div class="technologies container" id="technologies">
             TECHNOLOGIES
         </div>
-        <footer id="contact">
+        <footer id="contact" class="container">
             CONTACT
         </footer>
 
-    </div>
 
-<!--podpinanie jQuery z zewnątrz-->
+
+<!--podpinanie jQuery z folderu JS-->
 <script src="js/jquery-3.3.1.min.js"></script>
-<!--scroll dla sticky menu-->
 
+<!--scroll dla sticky menu-->
 <script>
 
     $(document).ready(function() {
@@ -79,6 +89,7 @@
         });
     });
 </script>
+
 <!--smooth scroll do hashów-->
 <script>
     // Select all links with hashes
