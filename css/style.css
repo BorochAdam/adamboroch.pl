@@ -155,7 +155,29 @@ ul > li:hover > a {
 }
 
 .technologies{
-    background-color: #ff3a50;
+    background-image: url("../images/laptopScreen.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.technologies-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    max-height: 90vh;
+}
+
+.technologies-single-box{
+    border: 1px solid red;
+    padding: 5px 10px;
+}
+
+.technologies-single-box img{
+    max-height: 120px;
+    width: auto;
 }
 
 footer{
