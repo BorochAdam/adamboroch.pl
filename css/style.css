@@ -85,7 +85,7 @@ body{
 .container-header{
     text-align: center;
     font-size: 20px;
-   
+
 }
 .header-menu{
     background: #d95267;
@@ -151,7 +151,7 @@ ul > li:hover > a {
 }
 
 .portfolio{
-    background-color: #7dff6d;
+    background-color: aliceblue;
 }
 
 .technologies{
@@ -200,4 +200,26 @@ footer{
 
 .about-me p:nth-of-type(2n){
    text-align: right;
+}
+
+.projects-box{
+    margin-right: 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.single-box{
+
+}
+
+.single-box img{
+    width: 300px;
+    height: auto;
+}
+
+.single-box:hover{
+    max-height: 300px;
+    width: auto;
+    opacity: 0.5;
 }
