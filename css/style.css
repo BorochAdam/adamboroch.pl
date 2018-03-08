@@ -247,3 +247,11 @@ ul > li:hover > a {
 footer{
     background-color: aliceblue;
 }
+
+.contact-container{
+    border: 1px solid red
+}
+
+.single-contact{
+    border: 1px solid blue;
+}
