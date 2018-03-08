@@ -249,7 +249,8 @@ footer{
 }
 
 .contact-container{
-    border: 1px solid red
+    border: 1px solid red;
+    background: red;
 }
 
 .single-contact{
