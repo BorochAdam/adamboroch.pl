@@ -256,9 +256,38 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 80vh;
 }
 
 .single-contact{
-    border: 1px solid green;
+    margin: 10px;
+    text-align: center;
+}
+
+.single-contact i{
+    text-decoration: none;
+    font-size: 80px;
+}
+
+.single-contact a{
+    text-decoration: none;
+}
+.single-contact a:hover{
+    text-decoration: red;
+}
+
+.icon-facebook{
+    color: #3b5998;
+}
+
+.icon-phone{
+    color: #000;
+}
+
+.icon-linkedin{
+    color: #0077b5;
+}
+
+.icon-mail{
+    color: #dd4b39;
 }
